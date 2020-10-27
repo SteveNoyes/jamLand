@@ -64,23 +64,27 @@
         <div class="gift_card">
           <img src="css/img/frontpage/giftcardwithLogo.jpg" alt="Buy a gift card from Jammyland" width="50%">
           <h2>Gift cards are now available.</h2>
-          <a href="https://www.itson.me/widget/74-2623-jammyland-cocktail-bar-reggae-kitchen#/merchant/2623"><button class="button">Gift Card</button></a>
+          <a href="https://www.itson.me/widget/74-2623-jammyland-cocktail-bar-reggae-kitchen#/merchant/2623" target="_blank"><button class="button">Gift Card</button></a>
         </div>
 
         <footer class="offwhite">
           <div class="top_color">
 
           </div>
-          <div class="newsletter">
-            <h2>Join our Newsletter!</h2>
-            <form>
-              <label for="name">Name:</label><br>
-              <input id="newsName" type="text" id="name" name="fname"><br>
-              <label for="lname">Email:</label><br>
-              <input type="email" id="email" name="email"><br>
-              <input class="button" id="newsButton" type="submit" name="" value="Submit">
-            </form>
-          </div>
+
+            <form method="post" class="contactForm" name="contact_form"
+            action="form.php">
+               <h2 class="contact-title">Sign up for our newsletter.</h2>
+               <label for="name">Name:</label>
+               <input type="text" class="nameInput" name="name" placeholder="name" required>
+               <br>
+               <label for="email">Email:</label>
+               <input type="text" class="emailInput" id="email" name="email" required pattern="(.+)@(.+){1,}\.(.+){2,}" placeholder="email">
+               <br>
+               <input type="submit" name="submit" class="btn" value="Submit">
+             </form>
+
+
           <a href="index.html"><img class="jamDog" src="/css/img/jamLandDogLogoTrans.png" alt="Jammyland Logo with Dog" height="100px;"></a>
           <div class="social_media">
             <a target="_blank" href="https://www.facebook.com/jammylanddtlv/"><img src="/css/img/social/facebookIcon.svg" alt="Facebook Icon" width="40px;"></a>

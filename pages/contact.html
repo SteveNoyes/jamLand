@@ -32,15 +32,20 @@
           <img src="../css/img/frontpage/jamLandMural.jpg" style="width:100%">
         </div>
         <div class="column">
-          <form action="">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="First name..">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Last name..">
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="Let us know your thoughts.." style="height:170px"></textarea>
-            <input class="button" type="submit" value="Submit">
-          </form>
+          <form method="post" class="contactForm" name="contact_form"
+          action="contact.php">
+             <label for="name">Name:</label>
+             <input type="text" id="lname" class="nameInput" name="name" placeholder="name" required>
+             <br>
+             <label for="email">Email:</label>
+             <input type="text" class="emailInput fname" id="email" name="email" required pattern="(.+)@(.+){1,}\.(.+){2,}" placeholder="email">
+             <br>
+             <label for="message">Message:</label>
+             <br>
+             <textarea name="message" id="subject" class="messageInput" style="height:14em;"></textarea>
+             <br>
+             <input type="submit" name="submit" class="btn" value="Submit">
+           </form>
         </div>
       </div>
     </div>
@@ -50,26 +55,30 @@
       <div class="top_color">
 
       </div>
-      <div class="newsletter">
-        <h2>Join our Newsletter!</h2>
-        <form>
-          <label for="name">Name:</label><br>
-          <input id="newsName" type="text" id="name" name="fname"><br>
-          <label for="lname">Email:</label><br>
-          <input type="email" id="email" name="email"><br>
-          <input class="button" id="newsButton" type="submit" name="" value="Submit">
-        </form>
-      </div>
-      <a href="../index.html"><img class="jamDog" src="/css/img/jamLandDogLogoTrans.png" alt="Jammyland Logo with Dog" height="100px;"></a>
+
+
+      <form method="post" class="contactForm" name="contact_form"
+      action="form.php">
+         <h2 class="contact-title">Sign up for our newsletter.</h2>
+         <label for="name">Name:</label>
+         <input type="text" class="nameInput" name="name" placeholder="name" required>
+         <br>
+         <label for="email">Email:</label>
+         <input type="text" class="emailInput" id="email" name="email" required pattern="(.+)@(.+){1,}\.(.+){2,}" placeholder="email">
+         <br>
+         <input type="submit" name="submit" class="btn" value="Submit">
+       </form>
+
+
+      <a href="index.html"><img class="jamDog" src="/css/img/jamLandDogLogoTrans.png" alt="Jammyland Logo with Dog" height="100px;"></a>
       <div class="social_media">
         <a target="_blank" href="https://www.facebook.com/jammylanddtlv/"><img src="/css/img/social/facebookIcon.svg" alt="Facebook Icon" width="40px;"></a>
         <a target="_blank" href="https://www.instagram.com/jammylandlv/"><img src="/css/img/social/InstagramSVGIcon.svg" alt="Instagram Icon" width="40px;"></a>
         <a target="_blank" href="https://twitter.com/jammylandlv?lang=en"><img src="/css/img/social/twitterSVGIcon.svg" alt="Twitter Icon" width="40px;"></a>
       </div>
       <p>&#169; Jammyland 2020</p>
-
     </footer>
 
-  <script src="../js/app.js" charset="utf-8"></script>
+  <script src="/js/app.js" charset="utf-8"></script>
   </body>
-</html>
+  </html>
